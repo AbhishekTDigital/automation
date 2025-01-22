@@ -58,7 +58,7 @@
         <configuration>
           <!-- Ensure all test classes are included -->
           <includes>
-            <include>**/FirstPageTest.java</include>  <!-- Include your test class explicitly -->
+            <include>**/FirstPage.java</include>  <!-- Include your test class explicitly -->
           </includes>
           <reportFormat>brief</reportFormat>
           <printSummary>true</printSummary>
