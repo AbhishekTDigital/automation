@@ -37,6 +37,7 @@
 
   <build>
     <plugins>
+      <!-- Maven Compiler Plugin for compiling with Java 11 -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -44,6 +45,17 @@
         <configuration>
           <source>11</source>
           <target>11</target>
+        </configuration>
+      </plugin>
+
+      <!-- Maven Surefire Plugin to run the tests and report results -->
+      <plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-surefire-plugin</artifactId>
+        <version>2.22.2</version>
+        <configuration>
+          <reportFormat>brief</reportFormat>
+          <printSummary>true</printSummary>
         </configuration>
       </plugin>
     </plugins>
