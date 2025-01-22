@@ -36,6 +36,22 @@
   </dependencies>
 
   <build>
+  <plugins>
+    <plugin>
+      <groupId>org.apache.maven.plugins</groupId>
+      <artifactId>maven-surefire-plugin</artifactId>
+      <version>2.22.2</version>
+      <configuration>
+        <includes>
+          <include>**/Test*.java</include> <!-- Ensure all test classes are picked up -->
+        </includes>
+      </configuration>
+    </plugin>
+  </plugins>
+</build>
+
+
+  <build>
     <plugins>
       <!-- Maven Compiler Plugin for compiling with Java 11 -->
       <plugin>
