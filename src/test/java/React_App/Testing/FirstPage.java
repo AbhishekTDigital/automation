@@ -9,7 +9,7 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class FirstPage 
 {
-	public static void main(String arg[])
+	public void testPageLoad()
 	{
 		ChromeOptions options=new ChromeOptions();
 		options.addArguments("--headless"); // Enable headless mode
