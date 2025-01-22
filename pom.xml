@@ -56,8 +56,9 @@
         <artifactId>maven-surefire-plugin</artifactId>
         <version>2.22.2</version>
         <configuration>
+          <!-- Ensure all test classes are included -->
           <includes>
-            <include>**/Test*.java</include>  <!-- Ensure all test classes are included -->
+            <include>**/FirstPageTest.java</include>  <!-- Include your test class explicitly -->
           </includes>
           <reportFormat>brief</reportFormat>
           <printSummary>true</printSummary>
