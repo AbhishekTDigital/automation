@@ -51,20 +51,17 @@
       </plugin>
 
       <!-- Maven Surefire Plugin to run the tests and report results -->
-      <plugin>
-        <groupId>org.apache.maven.plugins</groupId>
-        <artifactId>maven-surefire-plugin</artifactId>
-        <version>2.22.2</version>
-        <configuration>
-          <!-- Ensure all test classes are included -->
-          <includes>
-            <include>**/FirstPage.java</include>  <!-- Include your test class explicitly -->
-          </includes>
-          <reportFormat>brief</reportFormat>
-          <printSummary>true</printSummary>
-          <skipTests>false</skipTests>  <!-- Ensures tests are not skipped -->
-        </configuration>
-      </plugin>
+       <!-- Maven Surefire Plugin to run tests -->
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.3.0</version> <!-- Ensure to use the latest version -->
+                <configuration>
+                <includes>
+                    <include>**/*FirstPage.java</include> <!-- Make sure the test pattern matches your test classes -->
+                </includes>
+            </configuration>
+            </plugin>
     </plugins>
   </build>
 </project>
